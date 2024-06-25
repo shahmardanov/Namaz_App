@@ -66,6 +66,9 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.1.1")
     kapt("com.google.dagger:hilt-android-compiler:2.47")
 
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

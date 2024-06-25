@@ -8,6 +8,5 @@ interface ApiService {
 
     @GET("service/economy/coin/list")
     suspend fun getAllCity(@Query("apiKey") apiKey: String = "gvloSjuIbqB3u0EDg5OrFcIOG2ac74gAgi46NVEYweHnNfaEcF6yajYAxC8M")
-            : Response<CoinModel>
-}
+            : Response<>
 }
