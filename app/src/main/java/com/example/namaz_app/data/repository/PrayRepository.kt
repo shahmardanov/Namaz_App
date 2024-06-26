@@ -1,6 +1,7 @@
 package com.example.namaz_app.data.repository
 
 import com.example.namaz_app.data.api.ApiService
+import com.example.namaz_app.util.NetworkResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
