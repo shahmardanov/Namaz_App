@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.alijan.demo.data.model.Pray" />
+            type="com.alijan.demo.data.model.Namaz" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

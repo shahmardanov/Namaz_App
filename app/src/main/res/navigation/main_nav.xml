@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_nav">
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.alijan.demo.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_prayFragment"
+            app:destination="@id/prayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prayFragment"
+        android:name="com.alijan.demo.ui.pray.PrayFragment"
+        android:label="PrayFragment" >
+        <argument
+            android:name="city"
+            app:argType="string" />
+    </fragment>
 </navigation>
