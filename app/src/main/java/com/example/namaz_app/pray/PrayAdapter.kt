@@ -3,12 +3,12 @@ package com.alijan.demo.ui.pray
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.alijan.demo.data.model.Pray
-import com.alijan.demo.databinding.ItemPrayBinding
+import com.alijan.demo.data.model.Namaz
+import com.example.namaz_app.databinding.ItemPrayBinding
 
 class PrayAdapter : RecyclerView.Adapter<PrayAdapter.PrayViewHolder>() {
 
-    private val prayList = ArrayList<Pray>()
+    private val prayList = ArrayList<Namaz>()
 
     inner class PrayViewHolder(val itemPrayBinding: ItemPrayBinding) :
         RecyclerView.ViewHolder(itemPrayBinding.root)
@@ -26,7 +26,7 @@ class PrayAdapter : RecyclerView.Adapter<PrayAdapter.PrayViewHolder>() {
 
     }
 
-    fun updateList(newList: List<Pray>) {
+    fun updateList(newList: List<Namaz>) {
         prayList.clear()
         prayList.addAll(newList)
         notifyDataSetChanged()

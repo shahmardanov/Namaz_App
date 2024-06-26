@@ -4,18 +4,18 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.alijan.demo.data.model.Pray
-import com.alijan.demo.repository.PrayRepository
-import com.alijan.demo.util.NetworkResponse
+import com.alijan.demo.data.model.Namaz
+import com.example.namaz_app.data.repository.NamazRepository
+import com.example.namaz_app.util.NetworkResponse
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class PrayViewModel @Inject constructor(private val repository: PrayRepository) : ViewModel() {
+class PrayViewModel @Inject constructor(private val repository: NamazRepository) : ViewModel() {
 
-    private var _pray = MutableLiveData<List<Pray>>()
-    val pray: LiveData<List<Pray>> get() = _pray
+    private var _pray = MutableLiveData<List<Namaz>>()
+    val pray: LiveData<List<Namaz>> get() = _pray
 
     private var _error = MutableLiveData<String>()
     val error: LiveData<String> get() = _error

@@ -6,7 +6,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-class PrayRepository @Inject constructor(private val apiManager: ApiService) {
+class NamazRepository @Inject constructor(private val apiManager: ApiService) {
 
     suspend fun getPrayDate(city: String) = withContext(Dispatchers.IO) {
         try {

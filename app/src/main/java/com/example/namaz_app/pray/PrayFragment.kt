@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
-import com.alijan.demo.databinding.FragmentPrayBinding
+import com.example.namaz_app.databinding.FragmentPrayBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -3,7 +3,7 @@ package com.alijan.demo.ui.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.alijan.demo.databinding.ItemCityBinding
+import com.example.namaz_app.databinding.ItemCityBinding
 
 class CityAdapter : RecyclerView.Adapter<CityAdapter.CityViewHolder>() {
 
