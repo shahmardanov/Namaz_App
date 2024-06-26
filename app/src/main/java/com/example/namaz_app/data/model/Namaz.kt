@@ -3,7 +3,7 @@ package com.alijan.demo.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Pray(
+data class Namaz(
     @SerializedName("saat")
     val saat: String?,
     @SerializedName("vakit")
